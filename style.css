@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** || Carousel Styles */
+body {
+    background: #e2e0c7;
+}
+
+/* Navigation */
+
+#navigation {
+    position: fixed;
+    z-index: 40;
+    width: 90%;
+    left: 10%;
+    background-color: #4d300c;
+    text-align: center;
+    height: 6rem;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 70%, 55% 70%, 50% 90%, 45% 70%, 10% 70%);
+    transition: all 0.4s ease-in-out;
+    /* anim GS */
+    opacity: 0;
+}
+
+#navigation a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem 5rem;
+    line-height: 4rem;
+    font-family: 'Kaushan Script';
+    margin: auto;
+    color: #eedfaf;
+}
+
+
+#navigation a:active {
+    font-size: 2rem;
+}
+
+.logo {
+    display: flex;
+    position: absolute;
+    left: 45%;
+    top: 17%;
+    border-radius: 15%;
+    flex-shrink: 0;
+    background: teal;
+    width: 20%;
+    box-shadow: 10px 5px 5px #3a2204;
+    /* anim GS */
+    opacity: 0;
+}
+
+#carousel {
+
+    position: relative;
+    width: 300%;
+    height: 100px;
+    place-items: center;
+}
+
+#carousel li {
+    opacity: 0;
+    list-style: outside none none;
+    width: 300px;
+    position: absolute;
+    background: transparent;
+    transition: opacity 1s;
+}
+
+/** || General Styles */
+
+header,
+main {
+    display: grid;
+    min-width: 300px;
+}
+
+main {
+    padding-bottom: 20rem;
+}
+
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+@media (min-width: 526px) {
+
+    #carousel,
+    #carousel li,
+    img {
+        width: 100%;
+        max-width: 512px;
+    }
+}
+
+.presen {
+
+    position: relative;
+    height: auto;
+    display: flex;
+    margin: 0 0 0 65%;
+    /* anim GS */
+    opacity: 0;
+
+
+}
+
+.entrep {
+
+    position: relative;
+    margin: -90px 550px;
+    
+    color: #3a2204;
+    width: 400px;
+    height: 500px;
+    /* anim GS */
+    opacity: 0;
+}
+
+.entrep p {
+    text-align: center;
+    padding: 2%;
+    font-size: 16px;
+
+}
+
+.choix {
+    flex-wrap: wrap;
+    list-style-type: none;
+    position: absolute;
+    top: -350px;
+    width: 60%;
+    margin: 5% 10% 10% 20%;
+
+}
+
+.choix h1 {
+    padding: 6px;
+    margin: -17% 10%;
+    position: absolute;
+    text-align: center;
+    background-image: radial-gradient(#f1f1f1, #3a2204);
+    border-radius: 50%;
+    font-size: 16px;
+
+}
+
+.choix a {
+    display: block;
+    text-decoration: none;
+    color: #4d300c;
+
+}
+#lien{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
